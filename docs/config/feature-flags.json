@@ -1,0 +1,44 @@
+{
+  "feature_flags": [
+    {
+      "name": "new_dashboard_ui",
+      "owner": "frontend-team",
+      "ticket": "FE-1042",
+      "description": "Redesigned dashboard with new component library",
+      "status": { "production": "disabled", "staging": "enabled", "development": "enabled" },
+      "rollout_percentage": { "production": 0, "staging": 100 }
+    },
+    {
+      "name": "ai_search",
+      "owner": "search-team",
+      "ticket": "SRCH-88",
+      "description": "AI-powered semantic search across all content",
+      "status": { "production": "enabled", "staging": "enabled", "development": "enabled" },
+      "rollout_percentage": { "production": 25, "staging": 100 }
+    },
+    {
+      "name": "bulk_export",
+      "owner": "data-team",
+      "ticket": "DATA-301",
+      "description": "Allow users to bulk export records as CSV or XLSX",
+      "status": { "production": "disabled", "staging": "disabled", "development": "enabled" },
+      "rollout_percentage": { "production": 0, "staging": 0 }
+    },
+    {
+      "name": "two_factor_auth",
+      "owner": "security-team",
+      "ticket": "SEC-19",
+      "description": "Mandatory two-factor authentication for all users",
+      "status": { "production": "enabled", "staging": "enabled", "development": "disabled" },
+      "rollout_percentage": { "production": 100, "staging": 100 }
+    },
+    {
+      "name": "legacy_api_v1",
+      "owner": "platform-team",
+      "ticket": "PLAT-7",
+      "description": "Support for deprecated v1 API endpoints (sunset Q3)",
+      "status": { "production": "enabled", "staging": "disabled", "development": "disabled" },
+      "rollout_percentage": { "production": 100, "staging": 0 }
+    }
+  ]
+}
